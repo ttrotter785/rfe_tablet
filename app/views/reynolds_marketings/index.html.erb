@@ -1,0 +1,33 @@
+<h1>Listing reynolds_marketings</h1>
+
+<table>
+  <tr>
+    <th>First name</th>
+    <th>Last name</th>
+    <th>Phone</th>
+    <th>Email</th>
+    <th>Receive texts</th>
+    <th>Receive emails</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @reynolds_marketings.each do |reynolds_marketing| %>
+  <tr>
+    <td><%= reynolds_marketing.first_name %></td>
+    <td><%= reynolds_marketing.last_name %></td>
+    <td><%= reynolds_marketing.phone %></td>
+    <td><%= reynolds_marketing.email %></td>
+    <td><%= reynolds_marketing.receive_texts %></td>
+    <td><%= reynolds_marketing.receive_emails %></td>
+    <td><%= link_to 'Show', reynolds_marketing %></td>
+    <td><%= link_to 'Edit', edit_reynolds_marketing_path(reynolds_marketing) %></td>
+    <td><%= link_to 'Destroy', reynolds_marketing, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Reynolds marketing', new_reynolds_marketing_path %>

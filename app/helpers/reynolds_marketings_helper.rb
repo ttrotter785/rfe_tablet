@@ -1,0 +1,2 @@
+module ReynoldsMarketingsHelper
+end

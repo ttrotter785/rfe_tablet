@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>First name:</b>
+  <%= @reynolds_marketing.first_name %>
+</p>
+
+<p>
+  <b>Last name:</b>
+  <%= @reynolds_marketing.last_name %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%= @reynolds_marketing.phone %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @reynolds_marketing.email %>
+</p>
+
+<p>
+  <b>Receive texts:</b>
+  <%= @reynolds_marketing.receive_texts %>
+</p>
+
+<p>
+  <b>Receive emails:</b>
+  <%= @reynolds_marketing.receive_emails %>
+</p>
+
+
+<%= link_to 'Edit', edit_reynolds_marketing_path(@reynolds_marketing) %> |
+<%= link_to 'Back', reynolds_marketings_path %>

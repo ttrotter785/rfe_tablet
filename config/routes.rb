@@ -1,4 +1,7 @@
 RfeTablet::Application.routes.draw do
+  resources :reynolds_marketings
+
+
   get "home/index"
   root :to => "home#index"
   # The priority is based upon order of creation:

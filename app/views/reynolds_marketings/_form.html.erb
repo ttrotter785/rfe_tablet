@@ -1,0 +1,41 @@
+<%= form_for(@reynolds_marketing) do |f| %>
+  <% if @reynolds_marketing.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@reynolds_marketing.errors.count, "error") %> prohibited this reynolds_marketing from being saved:</h2>
+
+      <ul>
+      <% @reynolds_marketing.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="row-fluid">
+    <div class="span2"><%= f.label :first_name %></div>
+    <div class="span4"><%= f.text_field :first_name %></div>
+  </div>
+  <div class="row-fluid">
+    <div class="span2"><%= f.label :last_name %></div>
+    <div class="span4"><%= f.text_field :last_name %></div>
+  </div>
+  <div class="row-fluid">
+    <div class="span2"><%= f.label :phone %></div>
+    <div class="span4"><%= f.telephone_field :phone %></div>
+  </div>
+  <div class="row-fluid">
+    <div class="span2"><%= f.label :email %></div>
+    <div class="span4"><%= f.email_field :email %></div>
+  </div>
+  <div class="row-fluid">
+    <div class="span2"><%= f.label :receive_texts %></div>
+    <div class="span4"><%= f.check_box :receive_texts %></div>
+  </div>
+  <div class="row-fluid">
+    <div class="span2"><%= f.label :receive_emails %></div>
+    <div class="span4"><%= f.check_box :receive_emails %></div>
+  </div>
+  <div class="actions">
+    <%= submit_tag("Submit", class: "btn btn-success", id: "create_marketing_button") %>
+  </div>
+<% end %>
