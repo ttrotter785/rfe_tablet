@@ -12,7 +12,7 @@ gem 'devise'
 gem 'therubyracer'
 gem 'less-rails'
 gem 'twitter-bootstrap-rails'
-
+gem 'client_side_validations'
 
 # Gems used only for assets and not required
 # in production environments by default.
