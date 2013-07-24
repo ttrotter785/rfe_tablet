@@ -1,0 +1,39 @@
+<%if params[:game].nil? %>
+<h2>Games!</h2><br>
+<div class="row-fluid">
+	<div class="span2"><%= link_to image_tag("games_forever_farm.jpg"), {:controller => "home", :action => "games", :game => "forever" }%></div>
+	<div class="span10"><h4>Meet Forever Farm</h4><br>
+Can you move the Forever Farm animals into their place in the barnyard?</div>
+</div><br>
+<div class="row-fluid">
+	<div class="span2"><%= link_to image_tag("games_matching.jpg"), {:controller => "home", :action => "games", :game => "matching" }%></div>
+	<div class="span10"><h4>Matching Cards</h4><br>
+Test your skill matching pairs of cards.</div>
+</div><br>
+<div class="row-fluid">
+	<div class="span2"><%= link_to image_tag("games_johnny_tractor.jpg"), {:controller => "home", :action => "games", :game => "apple" }%></div>
+	<div class="span10"><h4>Johnny Tractor's Apple Orchard</h4><br>
+Help Johnny Tractor catch the falling apples in his favorite orchard.</div>
+</div><br>
+<div class="row-fluid">
+	<div class="span2"><%= link_to image_tag("games_spot_the_difference.jpg"), {:controller => "home", :action => "games", :game => "spot" }%></div>
+	<div class="span10"><h4>Spot the Difference</h4><br>
+Look closely, and discover what's different between two pictures!</div>
+</div><br>
+<%end%>
+<% if params[:game]=="forever" then%>
+<h2>Forever Farm!</h2>
+<object data="http://www.deere.com/en_US/docs/html/corporate/fans_visitors/kids/puzzle.swf" width="500"></object>
+<%end%>
+<% if params[:game]=="matching" then%>
+<h2>Matching Cards!</h2>
+<object data="http://www.deere.com/en_US/docs/html/corporate/fans_visitors/kids/memorygame_easy/MemoryGame.swf"></object>
+<%end%>
+<% if params[:game]=="apple" then%>
+<h2>Johnny Tractor's Apple Orchard!</h2>
+<object data="http://www.deere.com/en_US/docs/html/corporate/fans_visitors/kids/apple%20game_easy.swf"></object>
+<%end%>
+<% if params[:game]=="spot" then%>
+<h2>Spot the Difference!</h2>
+<object data="http://www.deere.com/en_US/docs/html/corporate/fans_visitors/kids/spot_easy.swf"></object>
+<%end%>

@@ -1,3 +1,4 @@
+<div class="pagination-centered"><%= image_tag "small_logo.png" %></div>
 <%= form_for @reynolds_marketing, :validate => true, :html => {:class => 'form-horizontal form-edit'} do |f|  %>
 
 <div class="control-group">
@@ -36,7 +37,9 @@
 		<%= f.check_box :receive_emails %>
 	</div>
 </div>
+<div class="pagination-centered">
   <div class="actions">
     <%= submit_tag("Submit", class: "btn btn-success", id: "create_marketing_button") %>
   </div>
+</div>
 <% end %>

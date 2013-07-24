@@ -3,7 +3,11 @@ RfeTablet::Application.routes.draw do
 
 
   get "home/index"
-  root :to => "home#index"
+  get 'home/our_story', :to => 'home#our_story', :as => :our_story
+  get 'home/product_brochures', :to => 'home#brochures', :as => :brochures
+  get 'home/games', :to => 'home#games', :as => :games
+  get 'home/promotions', :to => 'home#promotions', :as => :promotions
+  root :to => "reynolds_marketings#new"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
