@@ -15,4 +15,5 @@
 //= require twitter/bootstrap
 //= require rails.validations
 //= require rails.validations.actionView.js
+//= require jquery.screensaver-0.1.js
 //= require_tree .

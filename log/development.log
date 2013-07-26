@@ -28587,3 +28587,954 @@ Served asset /application.js - 304 Not Modified (0ms)
 
 Started GET "/assets/we_know_green_footer.jpg" for 127.0.0.1 at 2013-07-23 23:33:16 -0400
 Served asset /we_know_green_footer.jpg - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (4.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateReynoldsMarketings (20130717201441)
+Migrating to AddMostVisitedLocationsToReynoldsMarketings (20130725205448)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "reynolds_marketings" ADD "frequently_visits" varchar(255)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130725205448')[0m
+  [1m[35m (0.5ms)[0m  commit transaction
+Migrating to AddAgUpdatesToReynoldsMarketings (20130725205535)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "reynolds_marketings" ADD "receive_ag_sales" boolean
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "reynolds_marketings" ADD "receive_ag_service" boolean[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "reynolds_marketings" ADD "receive_ag_parts" boolean
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130725205535')[0m
+  [1m[35m (0.6ms)[0m  commit transaction
+Migrating to AddLawnUpdatesToReynoldsMarketings (20130725205558)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "reynolds_marketings" ADD "receive_lawn_sales" boolean
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "reynolds_marketings" ADD "receive_lawn_service" boolean[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "reynolds_marketings" ADD "receive_lawn_parts" boolean
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130725205558')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to AddGolfUpdatesToReynoldsMarketings (20130725205619)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "reynolds_marketings" ADD "receive_golf_sales" boolean
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "reynolds_marketings" ADD "receive_golf_service" boolean[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "reynolds_marketings" ADD "receive_golf_parts" boolean
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130725205619')[0m
+  [1m[35m (0.9ms)[0m  commit transaction
+Migrating to AddCwpUpdatesToReynoldsMarketings (20130725205650)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "reynolds_marketings" ADD "receive_cwp_sales" boolean
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "reynolds_marketings" ADD "receive_cwp_service" boolean[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "reynolds_marketings" ADD "receive_cwp_parts" boolean
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130725205650')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to AddRentalUpdatesToReynoldsMarketings (20130725205720)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "reynolds_marketings" ADD "receive_rental_updates" boolean
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130725205720')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to AddCommunityEventsUpdatesToReynoldsMarketings (20130725205750)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "reynolds_marketings" ADD "receive_community_event_updates" boolean
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130725205750')[0m
+  [1m[35m (0.6ms)[0m  commit transaction
+Migrating to AddAgTechUpdatesToReynoldsMarketings (20130725205858)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "reynolds_marketings" ADD "receive_ag_tech_updates" boolean
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130725205858')[0m
+  [1m[35m (0.4ms)[0m  commit transaction
+Migrating to AddIrrigationUpdatesToReynoldsMarketings (20130725205918)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "reynolds_marketings" ADD "receive_irrigation_updates" boolean
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130725205918')[0m
+  [1m[35m (0.4ms)[0m  commit transaction
+Migrating to AddAgronomyUpdatesToReynoldsMarketings (20130725205940)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "reynolds_marketings" ADD "receive_agronomy_updates" boolean
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130725205940')[0m
+  [1m[35m (0.4ms)[0m  commit transaction
+Migrating to AddToyUpdatesToReynoldsMarketings (20130725210003)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "reynolds_marketings" ADD "receive_toy_updates" boolean
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130725210003')[0m
+  [1m[35m (0.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (3.9ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateReynoldsMarketings (20130717201441)
+Migrating to AddMostVisitedLocationsToReynoldsMarketings (20130725205448)
+Migrating to AddAgUpdatesToReynoldsMarketings (20130725205535)
+Migrating to AddLawnUpdatesToReynoldsMarketings (20130725205558)
+Migrating to AddGolfUpdatesToReynoldsMarketings (20130725205619)
+Migrating to AddCwpUpdatesToReynoldsMarketings (20130725205650)
+Migrating to AddRentalUpdatesToReynoldsMarketings (20130725205720)
+Migrating to AddCommunityEventsUpdatesToReynoldsMarketings (20130725205750)
+Migrating to AddAgTechUpdatesToReynoldsMarketings (20130725205858)
+Migrating to AddIrrigationUpdatesToReynoldsMarketings (20130725205918)
+Migrating to AddAgronomyUpdatesToReynoldsMarketings (20130725205940)
+Migrating to AddToyUpdatesToReynoldsMarketings (20130725210003)
+Migrating to AddFrequentsAndersonReynoldsMarketings (20130726124718)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130726124718')
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Migrating to AddFrequentsFishersReynoldsMarketings (20130726124745)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130726124745')[0m
+  [1m[35m (0.5ms)[0m  commit transaction
+Migrating to AddFrequentsLebanonReynoldsMarketings (20130726124809)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130726124809')
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+Migrating to AddFrequentsMooresvilleReynoldsMarketings (20130726124935)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130726124935')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to AddFrequentsMuncieReynoldsMarketings (20130726124957)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130726124957')
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+Migrating to AddFrequentsSheridanReynoldsMarketings (20130726125021)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130726125021')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to AddFrequentsXeniaReynoldsMarketings (20130726125050)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130726125050')
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+Migrating to AddFrequentsNicholasvilleReynoldsMarketings (20130726125118)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130726125118')[0m
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+  [1m[36m (3.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateReynoldsMarketings (20130717201441)
+Migrating to AddMostVisitedLocationsToReynoldsMarketings (20130725205448)
+Migrating to AddAgUpdatesToReynoldsMarketings (20130725205535)
+Migrating to AddLawnUpdatesToReynoldsMarketings (20130725205558)
+Migrating to AddGolfUpdatesToReynoldsMarketings (20130725205619)
+Migrating to AddCwpUpdatesToReynoldsMarketings (20130725205650)
+Migrating to AddRentalUpdatesToReynoldsMarketings (20130725205720)
+Migrating to AddCommunityEventsUpdatesToReynoldsMarketings (20130725205750)
+Migrating to AddAgTechUpdatesToReynoldsMarketings (20130725205858)
+Migrating to AddIrrigationUpdatesToReynoldsMarketings (20130725205918)
+Migrating to AddAgronomyUpdatesToReynoldsMarketings (20130725205940)
+Migrating to AddToyUpdatesToReynoldsMarketings (20130725210003)
+Migrating to AddFrequentsAndersonReynoldsMarketings (20130726124718)
+Migrating to AddFrequentsFishersReynoldsMarketings (20130726124745)
+Migrating to AddFrequentsLebanonReynoldsMarketings (20130726124809)
+Migrating to AddFrequentsMooresvilleReynoldsMarketings (20130726124935)
+Migrating to AddFrequentsMuncieReynoldsMarketings (20130726124957)
+Migrating to AddFrequentsSheridanReynoldsMarketings (20130726125021)
+Migrating to AddFrequentsXeniaReynoldsMarketings (20130726125050)
+Migrating to AddFrequentsNicholasvilleReynoldsMarketings (20130726125118)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+  [1m[36m (3.6ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to AddFrequentsNicholasvilleReynoldsMarketings (20130726125118)
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mCREATE TEMPORARY TABLE "altered_reynolds_marketings" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar(255), "last_name" varchar(255), "phone" varchar(255), "email" varchar(255), "receive_texts" boolean, "receive_emails" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "frequently_visits" varchar(255), "receive_ag_sales" boolean, "receive_ag_service" boolean, "receive_ag_parts" boolean, "receive_lawn_sales" boolean, "receive_lawn_service" boolean, "receive_lawn_parts" boolean, "receive_golf_sales" boolean, "receive_golf_service" boolean, "receive_golf_parts" boolean, "receive_cwp_sales" boolean, "receive_cwp_service" boolean, "receive_cwp_parts" boolean, "receive_rental_updates" boolean, "receive_community_event_updates" boolean, "receive_ag_tech_updates" boolean, "receive_irrigation_updates" boolean, "receive_agronomy_updates" boolean, "receive_toy_updates" boolean) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "reynolds_marketings"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "altered_reynolds_marketings" ("id","first_name","last_name","phone","email","receive_texts","receive_emails","created_at","updated_at","frequently_visits","receive_ag_sales","receive_ag_service","receive_ag_parts","receive_lawn_sales","receive_lawn_service","receive_lawn_parts","receive_golf_sales","receive_golf_service","receive_golf_parts","receive_cwp_sales","receive_cwp_service","receive_cwp_parts","receive_rental_updates","receive_community_event_updates","receive_ag_tech_updates","receive_irrigation_updates","receive_agronomy_updates","receive_toy_updates") VALUES (1, 'Tyson', 'Trotter', '3173323849', 'ttrotter@test.com', 't', 't', '2013-07-22 20:20:01.992091', '2013-07-22 20:20:01.992091', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [1m[35m (0.3ms)[0m  DROP TABLE "reynolds_marketings"
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "reynolds_marketings" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar(255), "last_name" varchar(255), "phone" varchar(255), "email" varchar(255), "receive_texts" boolean, "receive_emails" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "frequently_visits" varchar(255), "receive_ag_sales" boolean, "receive_ag_service" boolean, "receive_ag_parts" boolean, "receive_lawn_sales" boolean, "receive_lawn_service" boolean, "receive_lawn_parts" boolean, "receive_golf_sales" boolean, "receive_golf_service" boolean, "receive_golf_parts" boolean, "receive_cwp_sales" boolean, "receive_cwp_service" boolean, "receive_cwp_parts" boolean, "receive_rental_updates" boolean, "receive_community_event_updates" boolean, "receive_ag_tech_updates" boolean, "receive_irrigation_updates" boolean, "receive_agronomy_updates" boolean, "receive_toy_updates" boolean) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "altered_reynolds_marketings"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "reynolds_marketings" ("id","first_name","last_name","phone","email","receive_texts","receive_emails","created_at","updated_at","frequently_visits","receive_ag_sales","receive_ag_service","receive_ag_parts","receive_lawn_sales","receive_lawn_service","receive_lawn_parts","receive_golf_sales","receive_golf_service","receive_golf_parts","receive_cwp_sales","receive_cwp_service","receive_cwp_parts","receive_rental_updates","receive_community_event_updates","receive_ag_tech_updates","receive_irrigation_updates","receive_agronomy_updates","receive_toy_updates") VALUES (1, 'Tyson', 'Trotter', '3173323849', 'ttrotter@test.com', 't', 't', '2013-07-22 20:20:01.992091', '2013-07-22 20:20:01.992091', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [1m[35m (0.3ms)[0m  DROP TABLE "altered_reynolds_marketings"
+  [1m[36m (0.1ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20130726125118'[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+  [1m[36m (1.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateReynoldsMarketings (20130717201441)
+Migrating to AddAgUpdatesToReynoldsMarketings (20130725205535)
+Migrating to AddLawnUpdatesToReynoldsMarketings (20130725205558)
+Migrating to AddGolfUpdatesToReynoldsMarketings (20130725205619)
+Migrating to AddCwpUpdatesToReynoldsMarketings (20130725205650)
+Migrating to AddRentalUpdatesToReynoldsMarketings (20130725205720)
+Migrating to AddCommunityEventsUpdatesToReynoldsMarketings (20130725205750)
+Migrating to AddAgTechUpdatesToReynoldsMarketings (20130725205858)
+Migrating to AddIrrigationUpdatesToReynoldsMarketings (20130725205918)
+Migrating to AddAgronomyUpdatesToReynoldsMarketings (20130725205940)
+Migrating to AddToyUpdatesToReynoldsMarketings (20130725210003)
+Migrating to AddFrequentsAndersonReynoldsMarketings (20130726124718)
+Migrating to AddFrequentsFishersReynoldsMarketings (20130726124745)
+Migrating to AddFrequentsLebanonReynoldsMarketings (20130726124809)
+Migrating to AddFrequentsMooresvilleReynoldsMarketings (20130726124935)
+Migrating to AddFrequentsMuncieReynoldsMarketings (20130726124957)
+Migrating to AddFrequentsSheridanReynoldsMarketings (20130726125021)
+Migrating to AddFrequentsXeniaReynoldsMarketings (20130726125050)
+Migrating to AddFrequentsNicholasvilleReynoldsMarketings (20130726125118)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "reynolds_marketings" ADD "frequents_nicholasville" boolean
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130726125118')[0m
+  [1m[35m (6.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+  [1m[36m (1.3ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (7.0ms)[0m  CREATE TABLE "reynolds_marketings" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar(255), "last_name" varchar(255), "phone" varchar(255), "email" varchar(255), "receive_texts" boolean, "receive_emails" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "receive_ag_sales" boolean, "receive_ag_service" boolean, "receive_ag_parts" boolean, "receive_lawn_sales" boolean, "receive_lawn_service" boolean, "receive_lawn_parts" boolean, "receive_golf_sales" boolean, "receive_golf_service" boolean, "receive_golf_parts" boolean, "receive_cwp_sales" boolean, "receive_cwp_service" boolean, "receive_cwp_parts" boolean, "receive_rental_updates" boolean, "receive_community_event_updates" boolean, "receive_ag_tech_updates" boolean, "receive_irrigation_updates" boolean, "receive_agronomy_updates" boolean, "receive_toy_updates" boolean, "frequents_nicholasville" boolean, "frequents_anderson" boolean, "frequents_fishers" boolean, "frequents_lebanon" boolean, "frequents_mooresville" boolean, "frequents_muncie" boolean, "frequents_sheridan" boolean, "frequents_xenia" boolean) 
+  [1m[36m (0.7ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.5ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.0ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130717201441')
+  [1m[36m (1.5ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+  [1m[36m (1.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateReynoldsMarketings (20130717201441)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-26 16:28:09 -0400
+Processing by ReynoldsMarketingsController#new as HTML
+  Rendered reynolds_marketings/_form.html.erb (17.0ms)
+  Rendered reynolds_marketings/new.html.erb within layouts/application (38.4ms)
+Completed 500 Internal Server Error in 106ms
+
+ActionView::Template::Error (undefined method `receive_community_events_updates' for #<ReynoldsMarketing:0x007fb5af2099c0>):
+    95: 	<div class="span3">Rental</div>
+    96: 	<div class="span3"><%= f.check_box :receive_rental_updates %></div>
+    97: 	<div class="span3">Community Events</div>
+    98: 	<div class="span3"><%= f.check_box :receive_community_events_updates %></div>
+    99: </div>
+    100: <div class="row-fluid">
+    101: 	<div class="span3">Ag Technology Solutions</div>
+  app/views/reynolds_marketings/_form.html.erb:98:in `block in _app_views_reynolds_marketings__form_html_erb__4581462501033241485_70209133509260'
+  app/views/reynolds_marketings/_form.html.erb:2:in `_app_views_reynolds_marketings__form_html_erb__4581462501033241485_70209133509260'
+  app/views/reynolds_marketings/new.html.erb:3:in `_app_views_reynolds_marketings_new_html_erb___1200027916941994192_70209126276120'
+  app/controllers/reynolds_marketings_controller.rb:29:in `new'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.8ms)
+Connecting to database specified by database.yml
+  [1m[36m (1.3ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (1.1ms)[0m  CREATE TABLE "reynolds_marketings" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar(255), "last_name" varchar(255), "phone" varchar(255), "email" varchar(255), "receive_texts" boolean, "receive_emails" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "receive_ag_sales" boolean, "receive_ag_service" boolean, "receive_ag_parts" boolean, "receive_lawn_sales" boolean, "receive_lawn_service" boolean, "receive_lawn_parts" boolean, "receive_golf_sales" boolean, "receive_golf_service" boolean, "receive_golf_parts" boolean, "receive_cwp_sales" boolean, "receive_cwp_service" boolean, "receive_cwp_parts" boolean, "receive_rental_updates" boolean, "receive_community_events_updates" boolean, "receive_ag_tech_updates" boolean, "receive_irrigation_updates" boolean, "receive_agronomy_updates" boolean, "receive_toy_updates" boolean, "frequents_nicholasville" boolean, "frequents_anderson" boolean, "frequents_fishers" boolean, "frequents_lebanon" boolean, "frequents_mooresville" boolean, "frequents_muncie" boolean, "frequents_sheridan" boolean, "frequents_xenia" boolean) 
+  [1m[36m (0.8ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.7ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130717201441')
+  [1m[36m (1.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+  [1m[36m (1.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateReynoldsMarketings (20130717201441)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-26 16:28:56 -0400
+Processing by ReynoldsMarketingsController#new as HTML
+  Rendered reynolds_marketings/_form.html.erb (13.9ms)
+  Rendered reynolds_marketings/new.html.erb within layouts/application (33.8ms)
+Compiled jquery.screensaver-0.1.js  (0ms)  (pid 54588)
+Compiled application.js  (10ms)  (pid 54588)
+Completed 200 OK in 211ms (Views: 156.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-26 16:28:56 -0400
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-07-26 16:28:56 -0400
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-07-26 16:28:56 -0400
+Served asset /home.css - 304 Not Modified (22ms)
+
+
+Started GET "/assets/reynolds_marketings.css?body=1" for 127.0.0.1 at 2013-07-26 16:28:56 -0400
+Served asset /reynolds_marketings.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-07-26 16:28:56 -0400
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-26 16:28:56 -0400
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-26 16:28:56 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-07-26 16:28:56 -0400
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-07-26 16:28:56 -0400
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-07-26 16:28:56 -0400
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-07-26 16:28:56 -0400
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-07-26 16:28:56 -0400
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-07-26 16:28:56 -0400
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/small_logo_glow.png" for 127.0.0.1 at 2013-07-26 16:28:56 -0400
+Served asset /small_logo_glow.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/small_logo.png" for 127.0.0.1 at 2013-07-26 16:28:56 -0400
+Served asset /small_logo.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/we_know_green_footer.jpg" for 127.0.0.1 at 2013-07-26 16:28:56 -0400
+Served asset /we_know_green_footer.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-07-26 16:28:56 -0400
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-07-26 16:28:57 -0400
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/BRLNSR.TTF" for 127.0.0.1 at 2013-07-26 16:28:57 -0400
+Served asset /BRLNSR.TTF - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-07-26 16:28:57 -0400
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-07-26 16:28:57 -0400
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-07-26 16:28:57 -0400
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-07-26 16:28:57 -0400
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-07-26 16:28:57 -0400
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-26 16:28:57 -0400
+Served asset /twitter/bootstrap.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2013-07-26 16:28:57 -0400
+Served asset /rails.validations.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rails.validations.actionView.js?body=1" for 127.0.0.1 at 2013-07-26 16:28:57 -0400
+Served asset /rails.validations.actionView.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.screensaver-0.1.js?body=1" for 127.0.0.1 at 2013-07-26 16:28:57 -0400
+Served asset /jquery.screensaver-0.1.js - 200 OK (1ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-26 16:28:57 -0400
+Served asset /bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-07-26 16:28:57 -0400
+Served asset /home.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/reynolds_marketings.js?body=1" for 127.0.0.1 at 2013-07-26 16:28:57 -0400
+Served asset /reynolds_marketings.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-26 16:28:57 -0400
+Served asset /application.js - 200 OK (39ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-26 16:38:33 -0400
+Processing by ReynoldsMarketingsController#new as HTML
+  Rendered reynolds_marketings/_form.html.erb (13.7ms)
+  Rendered reynolds_marketings/new.html.erb within layouts/application (33.9ms)
+Completed 200 OK in 152ms (Views: 98.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-26 16:38:33 -0400
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-07-26 16:38:33 -0400
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/reynolds_marketings.css?body=1" for 127.0.0.1 at 2013-07-26 16:38:33 -0400
+Served asset /reynolds_marketings.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-07-26 16:38:33 -0400
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-07-26 16:38:33 -0400
+Served asset /home.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:33 -0400
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:33 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:33 -0400
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:33 -0400
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:33 -0400
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:33 -0400
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:33 -0400
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:33 -0400
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:33 -0400
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/small_logo_glow.png" for 127.0.0.1 at 2013-07-26 16:38:33 -0400
+Served asset /small_logo_glow.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/small_logo.png" for 127.0.0.1 at 2013-07-26 16:38:33 -0400
+Served asset /small_logo.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/we_know_green_footer.jpg" for 127.0.0.1 at 2013-07-26 16:38:33 -0400
+Served asset /we_know_green_footer.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:33 -0400
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:33 -0400
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:33 -0400
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:33 -0400
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:33 -0400
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:33 -0400
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:33 -0400
+Served asset /twitter/bootstrap.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:33 -0400
+Served asset /rails.validations.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rails.validations.actionView.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:33 -0400
+Served asset /rails.validations.actionView.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.screensaver-0.1.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:33 -0400
+Served asset /jquery.screensaver-0.1.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:33 -0400
+Served asset /bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:33 -0400
+Served asset /home.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/reynolds_marketings.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:33 -0400
+Served asset /reynolds_marketings.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:33 -0400
+Served asset /application.js - 304 Not Modified (18ms)
+
+
+Started GET "/assets/BRLNSR.TTF" for 127.0.0.1 at 2013-07-26 16:38:33 -0400
+Served asset /BRLNSR.TTF - 304 Not Modified (1ms)
+
+
+Started GET "/home/games" for 127.0.0.1 at 2013-07-26 16:38:36 -0400
+Processing by HomeController#games as HTML
+  Rendered home/games.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 40ms (Views: 39.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-26 16:38:36 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-07-26 16:38:36 -0400
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reynolds_marketings.css?body=1" for 127.0.0.1 at 2013-07-26 16:38:36 -0400
+Served asset /reynolds_marketings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-07-26 16:38:36 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:36 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-07-26 16:38:36 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:36 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:36 -0400
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:36 -0400
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:36 -0400
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:36 -0400
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:36 -0400
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:36 -0400
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:36 -0400
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/small_logo_glow.png" for 127.0.0.1 at 2013-07-26 16:38:36 -0400
+Served asset /small_logo_glow.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/games_forever_farm.jpg" for 127.0.0.1 at 2013-07-26 16:38:36 -0400
+Served asset /games_forever_farm.jpg - 304 Not Modified (18ms)
+
+
+Started GET "/assets/games_matching.jpg" for 127.0.0.1 at 2013-07-26 16:38:36 -0400
+Served asset /games_matching.jpg - 304 Not Modified (11ms)
+
+
+Started GET "/assets/games_johnny_tractor.jpg" for 127.0.0.1 at 2013-07-26 16:38:36 -0400
+Served asset /games_johnny_tractor.jpg - 304 Not Modified (9ms)
+
+
+Started GET "/assets/we_know_green_footer.jpg" for 127.0.0.1 at 2013-07-26 16:38:36 -0400
+Served asset /we_know_green_footer.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:36 -0400
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:36 -0400
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/games_spot_the_difference.jpg" for 127.0.0.1 at 2013-07-26 16:38:36 -0400
+Served asset /games_spot_the_difference.jpg - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:36 -0400
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:36 -0400
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:36 -0400
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/BRLNSR.TTF" for 127.0.0.1 at 2013-07-26 16:38:36 -0400
+Served asset /BRLNSR.TTF - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:36 -0400
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:36 -0400
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:36 -0400
+Served asset /rails.validations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.validations.actionView.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:36 -0400
+Served asset /rails.validations.actionView.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.screensaver-0.1.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:36 -0400
+Served asset /jquery.screensaver-0.1.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:36 -0400
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:36 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:36 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reynolds_marketings.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:36 -0400
+Served asset /reynolds_marketings.js - 304 Not Modified (0ms)
+
+
+Started GET "/home/games?game=forever" for 127.0.0.1 at 2013-07-26 16:38:37 -0400
+Processing by HomeController#games as HTML
+  Parameters: {"game"=>"forever"}
+  Rendered home/games.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 34ms (Views: 33.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-26 16:38:37 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-07-26 16:38:37 -0400
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-07-26 16:38:37 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reynolds_marketings.css?body=1" for 127.0.0.1 at 2013-07-26 16:38:37 -0400
+Served asset /reynolds_marketings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-07-26 16:38:37 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:37 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:37 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:37 -0400
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:37 -0400
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:37 -0400
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:37 -0400
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:37 -0400
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:37 -0400
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:37 -0400
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/small_logo_glow.png" for 127.0.0.1 at 2013-07-26 16:38:37 -0400
+Served asset /small_logo_glow.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/we_know_green_footer.jpg" for 127.0.0.1 at 2013-07-26 16:38:37 -0400
+Served asset /we_know_green_footer.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:37 -0400
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:37 -0400
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:37 -0400
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:37 -0400
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:37 -0400
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:37 -0400
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:37 -0400
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:37 -0400
+Served asset /rails.validations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.validations.actionView.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:37 -0400
+Served asset /rails.validations.actionView.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.screensaver-0.1.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:37 -0400
+Served asset /jquery.screensaver-0.1.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:37 -0400
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:37 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reynolds_marketings.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:37 -0400
+Served asset /reynolds_marketings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-26 16:38:37 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/BRLNSR.TTF" for 127.0.0.1 at 2013-07-26 16:38:37 -0400
+Served asset /BRLNSR.TTF - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-26 16:38:59 -0400
+Processing by ReynoldsMarketingsController#new as HTML
+  Rendered reynolds_marketings/_form.html.erb (13.7ms)
+  Rendered reynolds_marketings/new.html.erb within layouts/application (34.3ms)
+Completed 200 OK in 157ms (Views: 102.5ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-26 16:39:00 -0400
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-07-26 16:39:00 -0400
+Served asset /home.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-07-26 16:39:00 -0400
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/reynolds_marketings.css?body=1" for 127.0.0.1 at 2013-07-26 16:39:00 -0400
+Served asset /reynolds_marketings.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-26 16:39:00 -0400
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-07-26 16:39:00 -0400
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-26 16:39:00 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-07-26 16:39:00 -0400
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-07-26 16:39:00 -0400
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-07-26 16:39:00 -0400
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-07-26 16:39:00 -0400
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-07-26 16:39:00 -0400
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-07-26 16:39:00 -0400
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-07-26 16:39:00 -0400
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/small_logo_glow.png" for 127.0.0.1 at 2013-07-26 16:39:00 -0400
+Served asset /small_logo_glow.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/small_logo.png" for 127.0.0.1 at 2013-07-26 16:39:00 -0400
+Served asset /small_logo.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/we_know_green_footer.jpg" for 127.0.0.1 at 2013-07-26 16:39:00 -0400
+Served asset /we_know_green_footer.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-07-26 16:39:00 -0400
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/BRLNSR.TTF" for 127.0.0.1 at 2013-07-26 16:39:00 -0400
+Served asset /BRLNSR.TTF - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-07-26 16:39:00 -0400
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-07-26 16:39:00 -0400
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-07-26 16:39:00 -0400
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-07-26 16:39:00 -0400
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-07-26 16:39:00 -0400
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-26 16:39:00 -0400
+Served asset /twitter/bootstrap.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/rails.validations.actionView.js?body=1" for 127.0.0.1 at 2013-07-26 16:39:00 -0400
+Served asset /rails.validations.actionView.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rails.validations.js?body=1" for 127.0.0.1 at 2013-07-26 16:39:00 -0400
+Served asset /rails.validations.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.screensaver-0.1.js?body=1" for 127.0.0.1 at 2013-07-26 16:39:00 -0400
+Served asset /jquery.screensaver-0.1.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-26 16:39:00 -0400
+Served asset /bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-07-26 16:39:00 -0400
+Served asset /home.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/reynolds_marketings.js?body=1" for 127.0.0.1 at 2013-07-26 16:39:00 -0400
+Served asset /reynolds_marketings.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-26 16:39:00 -0400
+Served asset /application.js - 304 Not Modified (16ms)

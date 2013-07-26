@@ -37,6 +37,78 @@
 		<%= f.check_box :receive_emails %>
 	</div>
 </div>
+<div class="row-fluid">
+	<div class="span12"><strong>I frequently visit the following Reynolds locations:</strong></div>
+</div>
+<div class="row-fluid">
+	<div class="span3"><%= f.check_box :frequents_anderson %> Anderson</div>
+	<div class="span3"></div>
+	<div class="span3"><%= f.check_box :frequents_fishers %> Fishers</div>
+	<div class="span3"></div>
+</div>
+<div class="row-fluid">
+	<div class="span3"><%= f.check_box :frequents_lebanon %> Lebanon</div>
+	<div class="span3"></div>
+	<div class="span3"><%= f.check_box :frequents_mooresville %> Mooresville</div>
+	<div class="span3"></div>
+</div>
+<div class="row-fluid">
+	<div class="span3"><%= f.check_box :frequents_muncie %> Muncie</div>
+	<div class="span3"></div>
+	<div class="span3"><%= f.check_box :frequents_sheridan %> Sheridan</div>
+	<div class="span3"></div>
+</div>
+<div class="row-fluid">
+	<div class="span3"><%= f.check_box :frequents_nicholasville %> Nicholasville, KY</div>
+	<div class="span3"></div>
+	<div class="span3"><%= f.check_box :frequents_xenia %> Xenia, OH</div>
+	<div class="span3"></div>
+</div>
+<div class="row-fluid">
+	<div class="span12"><strong>I would like to receive updates on the following:</strong></div>
+</div>
+<div class="row-fluid">
+	<div class="span3"><strong>Agriculture</strong></div>
+	<div class="span3"><%= f.check_box :receive_ag_sales %> Sales</div>
+	<div class="span3"><%= f.check_box :receive_ag_service %> Service</div>
+	<div class="span3"><%= f.check_box :receive_ag_parts %> Parts</div>
+</div>
+<div class="row-fluid">
+	<div class="span3"><strong>Lawn & Garden</strong></div>
+	<div class="span3"><%= f.check_box :receive_lawn_sales %> Sales</div>
+	<div class="span3"><%= f.check_box :receive_lawn_service %> Service</div>
+	<div class="span3"><%= f.check_box :receive_lawn_parts %> Parts</div>
+</div>
+<div class="row-fluid">
+	<div class="span3"><strong>Golf & Turf</strong></div>
+	<div class="span3"><%= f.check_box :receive_golf_sales %> Sales</div>
+	<div class="span3"><%= f.check_box :receive_golf_service %> Service</div>
+	<div class="span3"><%= f.check_box :receive_golf_parts %> Parts</div>
+</div>
+<div class="row-fluid">
+	<div class="span3"><strong>CWP</strong></div>
+	<div class="span3"><%= f.check_box :receive_cwp_sales %> Sales</div>
+	<div class="span3"><%= f.check_box :receive_cwp_service %> Service</div>
+	<div class="span3"><%= f.check_box :receive_cwp_parts %> Parts</div>
+</div>
+<div class="row-fluid">
+	<div class="span3"><%= f.check_box :receive_rental_updates %> Rental</div>
+	<div class="span3"></div>
+	<div class="span3"><%= f.check_box :receive_community_events_updates %> Community Events</div>
+	<div class="span3"></div>
+</div>
+<div class="row-fluid">
+	<div class="span3"><%= f.check_box :receive_ag_tech_updates %> Ag Technology Solutions</div>
+	<div class="span3"></div>
+	<div class="span3"><%= f.check_box :receive_agronomy_updates %> Agronomy</div>
+	<div class="span3"></div>
+</div>
+<div class="row-fluid">
+	<div class="span3"><%= f.check_box :receive_irrigation_updates %> Irrigation</div>
+	<div class="span3"></div>
+	<div class="span3"><%= f.check_box :receive_toy_updates %> Toys & Merchandise</div>
+	<div class="span3"></div>
+</div>
 <div class="pagination-centered">
   <div class="actions">
     <%= submit_tag("Submit", class: "btn btn-success", id: "create_marketing_button") %>
