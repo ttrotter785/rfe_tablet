@@ -1,45 +1,59 @@
-<div class="pagination-centered"><%= image_tag "small_logo.png" %></div>
+<h3 class="row-fluid">Be the first to know.</h3>
+<h4 class="row-fluid">Sign up for Reynolds Farm Equipment alerts.</h4>
 <%= form_for @reynolds_marketing, :validate => true, :html => {:class => 'form-horizontal form-edit'} do |f|  %>
-
+<div class="row-fluid">
+<div class="span6">
 <div class="control-group">
 	<label class="control-label" for="reynolds_marketing_first_name"><%= f.label :first_name %></label>
-	<div class="controls">
-		<%= f.text_field :first_name %>
-	</div>
+	<div class="controls"><%= f.text_field :first_name %></div>
 </div>
+</div>
+<div class="span6">
 <div class="control-group">
 	<label class="control-label" for="reynolds_marketing_last_name"><%= f.label :last_name %></label>
-	<div class="controls">
-		<%= f.text_field :last_name %>
-	</div>
+	<div class="controls"><%= f.text_field :last_name %></div>
 </div>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span6">
 <div class="control-group">
 	<label class="control-label" for="reynolds_marketing_phone"><%= f.label :phone %></label>
 	<div class="controls">
 		<%= f.telephone_field :phone %>
 	</div>
 </div>
+</div>
+<div class="span6">
 <div class="control-group">
 	<label class="control-label" for="reynolds_marketing_email"><%= f.label :email %></label>
 	<div class="controls">
 		<%= f.email_field :email %>
 	</div>
 </div>
+</div>
+</div>
+
+<div class="row-fluid">
+<div class="span6">
 <div class="control-group">
 	<label class="control-label" for="reynolds_marketing_receive_texts"><%= f.label :receive_texts %></label>
 	<div class="controls">
 		<%= f.check_box :receive_texts %>
 	</div>
 </div>
+</div>
+<div class="span6">
 <div class="control-group">
 	<label class="control-label" for="reynolds_marketing_receive_emails"><%= f.label :receive_emails %></label>
 	<div class="controls">
 		<%= f.check_box :receive_emails %>
 	</div>
 </div>
-<div class="row-fluid">
-	<div class="span12"><strong>I frequently visit the following Reynolds locations:</strong></div>
 </div>
+</div>
+
+<h5 class="row-fluid">I frequently visit the following Reynolds locations:</h5><br>
 <div class="row-fluid">
 	<div class="span3"><%= f.check_box :frequents_anderson %> Anderson</div>
 	<div class="span3"></div>
@@ -64,9 +78,7 @@
 	<div class="span3"><%= f.check_box :frequents_xenia %> Xenia, OH</div>
 	<div class="span3"></div>
 </div>
-<div class="row-fluid">
-	<div class="span12"><strong>I would like to receive updates on the following:</strong></div>
-</div>
+<h5 class="row-fluid">I would like to receive updates on the following:</h5><br>
 <div class="row-fluid">
 	<div class="span3"><strong>Agriculture</strong></div>
 	<div class="span3"><%= f.check_box :receive_ag_sales %> Sales</div>
@@ -91,6 +103,7 @@
 	<div class="span3"><%= f.check_box :receive_cwp_service %> Service</div>
 	<div class="span3"><%= f.check_box :receive_cwp_parts %> Parts</div>
 </div>
+<h5 class="row-fluid">I would like to receive updates on the following:</h5><br>
 <div class="row-fluid">
 	<div class="span3"><%= f.check_box :receive_rental_updates %> Rental</div>
 	<div class="span3"></div>
@@ -108,10 +121,12 @@
 	<div class="span3"></div>
 	<div class="span3"><%= f.check_box :receive_toy_updates %> Toys & Merchandise</div>
 	<div class="span3"></div>
-</div>
+</div><br>
 <div class="pagination-centered">
   <div class="actions">
-    <%= submit_tag("Submit", class: "btn btn-success", id: "create_marketing_button") %>
+    <%= submit_tag("Tap Here to Submit", class: "btn btn-success", id: "create_marketing_button") %>
   </div>
 </div>
 <% end %>
+
+

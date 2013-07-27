@@ -7,6 +7,7 @@ RfeTablet::Application.routes.draw do
   get 'home/product_brochures', :to => 'home#brochures', :as => :brochures
   get 'home/games', :to => 'home#games', :as => :games
   get 'home/promotions', :to => 'home#promotions', :as => :promotions
+  get 'home/qrcode', :to => 'home#qrcode', :as=> :qrcode
   root :to => "reynolds_marketings#new"
   # The priority is based upon order of creation:
   # first created -> highest priority.

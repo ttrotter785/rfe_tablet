@@ -1,10 +1,9 @@
 <div class="pagination-centered">
-	<%= image_tag "gator_web_banner.jpg" %>
+	<%=link_to image_tag("webbanner_statefair.jpg"), url_for({:controller => 'reynolds_marketings', :action => 'new'}) %>
 </div>
 <div class="pagination-centered">
-	<%= image_tag "webbanner_demosale.jpg" %>
+	<%=link_to image_tag("gator_web_banner.jpg"), "http://www.reynoldsfarmequipment.com/product/RSX850i-" %>
 </div>
 <div class="pagination-centered">
-	<%= image_tag "webbanner_statefair.jpg" %>
+	<%=link_to image_tag("webbanner_demosale.jpg"), url_for({:controller => 'reynolds_marketings', :action => 'new'}) %>
 </div>
-
