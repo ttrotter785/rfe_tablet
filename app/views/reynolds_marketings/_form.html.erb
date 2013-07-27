@@ -1,5 +1,9 @@
 <h3 class="row-fluid">Be the first to know.</h3>
 <h4 class="row-fluid">Sign up for Reynolds Farm Equipment alerts.</h4>
+<h5 class="row-fluid">I would like to receive text messages and or emails for instant updates on sales, 
+	events, and promotions.  I realize I may opt out from this service at any time.  Reynolds Farm Equipment wil NOT 
+	share, sell, or otherwise abuse your mobile phone number or email address.  All information will be kept strictly 
+	confidential.</h5>
 <%= form_for @reynolds_marketing, :validate => true, :html => {:class => 'form-horizontal form-edit'} do |f|  %>
 <div class="row-fluid">
 <div class="span6">
@@ -18,7 +22,7 @@
 <div class="row-fluid">
 <div class="span6">
 <div class="control-group">
-	<label class="control-label" for="reynolds_marketing_phone"><%= f.label :phone %></label>
+	<label class="control-label" for="reynolds_marketing_phone">Cell Phone:</label>
 	<div class="controls">
 		<%= f.telephone_field :phone %>
 	</div>
