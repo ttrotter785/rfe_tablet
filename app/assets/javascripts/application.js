@@ -12,8 +12,10 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.event.mousestop.js
+//= require jquery.transit.min.js
+//= require jquery.slideshowify.min.js
 //= require twitter/bootstrap
 //= require rails.validations
 //= require rails.validations.actionView.js
-//= require jquery.screensaver-0.1.js
 //= require_tree .

@@ -34,13 +34,38 @@
     <!-- For all other devices -->
     <!-- Size should be 32 x 32 pixels -->
     <%= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon' %>
-    
-    <script type="text/javascript">
-    	$.jscreensaver();
-    </script>
+    <%= javascript_include_tag "application" %>
+
+<script type="text/javascript">
+var timer = null;
+var isIntervalSet = false;
+
+$(document).mousemove(function() {
+    if (isIntervalSet) {
+        return;
+    }
+    timer = window.setInterval(function() {
+    		$('#app_content').hide();
+    		$('#screensaver').show();
+    		$('#screensaver img').slideshowify({ parentEl:'#screensaver' });
+    }, 6000);
+    isIntervalSet = true;
+}).mousestop(function() {
+    isIntervalSet = false;
+    window.clearTimeout(timer);
+    timer = null;
+});
+
+$(document).click(function(){
+	if(!$('#app_content').is(":visible")){
+			$('#app_content').show();
+			$('#screensaver').hide();
+	} 
+});
+</script>
   </head>
   <body>
-
+		<div id="app_content">
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner radialGradient">
         <div class="container-fluid">
@@ -85,36 +110,11 @@
       </footer>
 
     </div> <!-- /container -->
-    
-<!--
-          <div class="sidebar">
-            <ul class="nav nav-list">
-              <li><%= link_to "Current Promotions", "/path1", class: "reynolds-link" %></li>
-              <li><%= link_to "Sign Up For Deals", "/path2", class: "reynolds-link"  %></li>
-              <li><%= link_to "Our Story", "/path3", class: "reynolds-link"  %></li>
-              <li><%= link_to "Products", "/path3", class: "reynolds-link"  %></li>
-							<li><%= link_to "Used Equipment", "/path3", class: "reynolds-link"  %></li>
-							<li><%= link_to "Product Brochures", "/path3", class: "reynolds-link"  %></li>
-							<li><%= link_to "Green Farm Toys", "/path3", class: "reynolds-link"  %></li>
-							<li><%= link_to "Green Farm Parts", "/path3", class: "reynolds-link"  %></li>
-							<li><%= link_to "Games for Kids", "/path3"  %></li>
-            </ul>
-          </div>
-
-        <div class="content">
-        	<div class="pagination-centered"><%= image_tag "small_logo.png" %></div>
-          <%= bootstrap_flash %>
-          <%= yield %>
-          <footer style="margin-left: 120px;">
-    				<%= image_tag "we_know_green_footer.jpg" %>
-    			</footer>
-        </div>
--->
-      
-    <!-- Javascripts
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <%= javascript_include_tag "application" %>
-
+	</div>
+	<div id="screensaver" style="margin-top:-80px;">
+		<%= image_tag "screensaver_barn.jpg" %>
+		<%= image_tag "screensaver_corn.jpg" %>
+		<%= image_tag "screensaver_rainbow.jpg" %>
+	</div>
   </body>
 </html>
