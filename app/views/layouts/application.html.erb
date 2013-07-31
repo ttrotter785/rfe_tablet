@@ -36,36 +36,8 @@
     <%= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon' %>
     <%= javascript_include_tag "application" %>
 
-<script type="text/javascript">
-var timer = null;
-var isIntervalSet = false;
-
-$(document).mousemove(function() {
-    if (isIntervalSet) {
-        return;
-    }
-    timer = window.setInterval(function() {
-    		$('#app_content').hide();
-    		$('#screensaver').css("display","inline");
-    		$('#screensaver img').slideshowify({ parentEl:'body' });
-    }, 6000);
-    isIntervalSet = true;
-}).mousestop(function() {
-    isIntervalSet = false;
-    window.clearTimeout(timer);
-    timer = null;
-});
-
-$(document).click(function(){
-	if(!$('#app_content').is(":visible")){
-			$('#app_content').show();
-			$('#screensaver img').slideshowify({ parentEl:'' });
-	} 
-});
-</script>
   </head>
   <body>
-		<div id="app_content">
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner radialGradient">
         <div class="container-fluid">
@@ -110,10 +82,5 @@ $(document).click(function(){
       </footer>
 
     </div> <!-- /container -->
-	</div>
-	<div id="screensaver" style="margin-top:-80px;display:none;">
-		<%= image_tag("screensaver_barn.jpg", class: "scrn_img") %>
-		<%= image_tag("screensaver_corn.jpg", class: "scrn_img") %>
-	</div>
   </body>
 </html>
