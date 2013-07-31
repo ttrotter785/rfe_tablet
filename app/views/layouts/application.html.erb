@@ -46,9 +46,9 @@ $(document).mousemove(function() {
     }
     timer = window.setInterval(function() {
     		$('#app_content').hide();
-    		$('#screensaver').show();
-    		$('#screensaver img').slideshowify({ parentEl:'#screensaver' });
-    }, 180000);
+    		$('#screensaver').css("display","inline");
+    		$('#screensaver img').slideshowify({ parentEl:'body' });
+    }, 6000);
     isIntervalSet = true;
 }).mousestop(function() {
     isIntervalSet = false;
@@ -59,7 +59,7 @@ $(document).mousemove(function() {
 $(document).click(function(){
 	if(!$('#app_content').is(":visible")){
 			$('#app_content').show();
-			$('#screensaver').hide();
+			$('#screensaver img').slideshowify({ parentEl:'' });
 	} 
 });
 </script>
@@ -111,10 +111,9 @@ $(document).click(function(){
 
     </div> <!-- /container -->
 	</div>
-	<div id="screensaver" style="margin-top:-80px;">
-		<%= image_tag "screensaver_barn.jpg" %>
-		<%= image_tag "screensaver_corn.jpg" %>
-		<%= image_tag "screensaver_rainbow.jpg" %>
+	<div id="screensaver" style="margin-top:-80px;display:none;">
+		<%= image_tag("screensaver_barn.jpg", class: "scrn_img") %>
+		<%= image_tag("screensaver_corn.jpg", class: "scrn_img") %>
 	</div>
   </body>
 </html>
