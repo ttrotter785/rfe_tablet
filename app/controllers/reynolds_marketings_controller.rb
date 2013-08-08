@@ -44,7 +44,8 @@ class ReynoldsMarketingsController < ApplicationController
 
     respond_to do |format|
       if @reynolds_marketing.save
-        format.html { redirect_to @reynolds_marketing, notice: 'Thank you for creating a profile with Reynolds Farm Equipment!' }
+        flash.keep[:notice] = 'Thank you for creating a profile with Reynolds Farm Equipment!'
+        format.html { redirect_to new_reynolds_marketing_path }
         format.json { render json: @reynolds_marketing, status: :created, location: @reynolds_marketing }
       else
         format.html { render action: "new" }

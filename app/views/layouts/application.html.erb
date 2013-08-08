@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" style="height:100%;">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
@@ -38,14 +38,9 @@
 
   </head>
   <body>
-    <div class="navbar navbar-fixed-top">
+    <div class="navbar navbar-fluid-top">
       <div class="navbar-inner radialGradient">
         <div class="container-fluid">
-          <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
           <%= image_tag "small_logo_glow.png" %>
           <div class="container-fluid nav-collapse">
           </div><!--/.nav-collapse -->
@@ -56,18 +51,18 @@
 		<div class="container-fluid">
       <div class="row-fluid">
         <div class="span3">
-          <div class="well sidevar-nav sidebar-nav-fixed">
+          <div class="well sidevar-nav sidebar-nav-green affix">
             <ul class="nav nav-list custom">
-              <li><%= link_to "Current Promotions", promotions_path, class: "reynolds-link" %></li><br>
-              <li><%= link_to "Sign Up For Deals", new_reynolds_marketing_path, class: "reynolds-link"  %></li><br>
-              <li><%= link_to "Follow Us on Twitter", qrcode_path, class: "reynolds-link"  %></li><br>
-              <li><%= link_to "Our Story", our_story_path, class: "reynolds-link"  %></li><br>
-              <li><%= link_to "Products", "http://reynoldsfarmequipment.com/2/New/Lawn-Garden", class: "reynolds-link"  %></li><br>
-							<li><%= link_to "Used Equipment", "http://allusedequipment.com/", class: "reynolds-link"  %></li><br>
-							<li><%= link_to "Product Brochures", brochures_path, class: "reynolds-link"  %></li><br>
-							<li><%= link_to "Green Farm Toys", "http://www.greenfarmtoys.com", class: "reynolds-link"  %></li><br>
-							<li><%= link_to "Green Farm Parts", "http://www.greenfarmparts.com", class: "reynolds-link"  %></li><br>
-							<li><%= link_to "Games for Kids", games_path, class: "reynolds-link"  %></li><br>
+              <li><%= link_to "Current Promotions", promotions_path, :class => "reynolds-link" %></li><br>
+              <li><%= link_to "Sign Up For Deals", new_reynolds_marketing_path, :class => "reynolds-link"  %></li><br>
+              <li><%= link_to "Follow Us on Twitter", qrcode_path, :class => "reynolds-link"  %></li><br>
+              <li><%= link_to "Our Story", our_story_path, :class => "reynolds-link"  %></li><br>
+              <li><%= link_to "Products", "http://reynoldsfarmequipment.com/2/New/Lawn-Garden", :class => "reynolds-link", :target=>"_blank"  %></li><br>
+							<li><%= link_to "Used Equipment", "http://allusedequipment.com/", :class => "reynolds-link", :target=>"_blank"  %></li><br>
+							<li><%= link_to "Product Brochures", brochures_path, :class => "reynolds-link"  %></li><br>
+							<li><%= link_to "Green Farm Toys", "http://www.greenfarmtoys.com", :class=>"reynolds-link", :target=>"_blank"  %></li><br>
+							<li><%= link_to "Green Farm Parts", "http://www.greenfarmparts.com", :class=>"reynolds-link", :target=>"_blank"  %></li><br>
+							<li><%= link_to "Games for Kids", games_path, :class => "reynolds-link"  %></li><br>
             </ul>
           </div><!--/.well -->
         </div><!--/span-->

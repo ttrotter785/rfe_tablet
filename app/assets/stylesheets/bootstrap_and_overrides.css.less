@@ -54,34 +54,24 @@
   border-left: solid 1px #FFFFFF;
 }
 
-body {
-  padding-top: 80px;
-}
-
-.sidebar, .content {
-    position: absolute;
-    top: 70px;
-    bottom: 0;
-}
-
-.sidebar-nav-fixed {
+.sidebar-nav-green {
     background: #336600;
-    position:fixed;
-    top:80px;
-    width:20%;
 }
 
-@media (max-width: 767px) {
-     .sidebar-nav-fixed {
-         width:auto;
-     }
+@media (max-width: 800px){
+  .affix {
+    position: static;
+    width: auto;
+    top: 0;
+  }
 }
 
-@media (max-width: 979px) {
-     .sidebar-nav-fixed {
-         position:static;
-        width: auto;
-     }
+
+.nav > li > a{
+    color: white;
+}
+.navlist > li > a {
+    color: white;
 }
 
 .custom > li > a {
@@ -91,11 +81,12 @@ body {
     color: black;
 }
 
-.content { left: 10em; right: 0; }
+//.content { left: 10em; right: 0; }
 
 .reynolds-link {
   font-family:"Berlin";
   font-size: 14pt;
+  color: white;
 }
 
 .reynolds_image {
