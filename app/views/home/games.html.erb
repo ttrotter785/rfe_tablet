@@ -1,11 +1,6 @@
 <%if params[:game].nil? %>
 <h2>Games!</h2><br>
 <div class="row-fluid">
-	<div class="span2"><%= link_to image_tag("games_forever_farm.jpg"), {:controller => "home", :action => "games", :game => "forever" }%></div>
-	<div class="span10"><h4>Meet Forever Farm</h4><br>
-Can you move the Forever Farm animals into their place in the barnyard?</div>
-</div><br>
-<div class="row-fluid">
 	<div class="span2"><%= link_to image_tag("games_johnny_tractor.jpg"), {:controller => "home", :action => "games", :game => "apple" }%></div>
 	<div class="span10"><h4>Johnny Tractor's Apple Orchard</h4><br>
 Help Johnny Tractor catch the falling apples in his favorite orchard.</div>
@@ -14,41 +9,43 @@ Help Johnny Tractor catch the falling apples in his favorite orchard.</div>
 	<div class="span2"><%= link_to image_tag("games_spot_the_difference.jpg"), {:controller => "home", :action => "games", :game => "spot" }%></div>
 	<div class="span10"><h4>Spot the Difference</h4><br>
 Look closely, and discover what's different between two pictures!</div>
-</div><br>
+</div>
 <%end%>
 <% if params[:game]=="forever" then%>
 <h2>Forever Farm!</h2>
-<object width="800" height="800"
+<object width="700" height="700"
 classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"
 codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0">
 <param name="SRC" value="http://www.deere.com/en_US/docs/html/corporate/fans_visitors/kids/puzzle.swf">
-<embed src="http://www.deere.com/en_US/docs/html/corporate/fans_visitors/kids/puzzle.swf" width="800" height="800"></embed>
+<embed src="http://www.deere.com/en_US/docs/html/corporate/fans_visitors/kids/puzzle.swf" width="700" height="700"></embed>
 </object>
 <%end%>
 <% if params[:game]=="matching" then%>
 <h2>Matching Cards!</h2>
-<object width="800" height="800"
+<object width="700" height="600"
 classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"
 codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0">
 <param name="SRC" value="http://www.deere.com/en_US/docs/html/corporate/fans_visitors/kids/memorygame_easy/MemoryGame.swf">
-<embed src="http://www.deere.com/en_US/docs/html/corporate/fans_visitors/kids/memorygame_easy/MemoryGame.swf" width="800" height="800"></embed>
+<embed src="http://www.deere.com/en_US/docs/html/corporate/fans_visitors/kids/memorygame_easy/MemoryGame.swf" width="700" height="600"></embed>
 </object>
 <%end%>
 <% if params[:game]=="apple" then%>
 <h2>Johnny Tractor's Apple Orchard!</h2>
-<object width="800" height="800"
+<h5>Tap where you want the bucket to move to catch the falling apples!</h5>
+<object width="700" height="500"
 classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"
 codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0">
 <param name="SRC" value="http://www.deere.com/en_US/docs/html/corporate/fans_visitors/kids/apple%20game_easy.swf">
-<embed src="http://www.deere.com/en_US/docs/html/corporate/fans_visitors/kids/apple%20game_easy.swf" width="800" height="800"></embed>
+<embed src="http://www.deere.com/en_US/docs/html/corporate/fans_visitors/kids/apple%20game_easy.swf" width="700" height="500"></embed>
 </object>
 <%end%>
 <% if params[:game]=="spot" then%>
 <h2>Spot the Difference!</h2>
-<object width="800" height="800"
+<h5>Tap on the differences you see between the two loaders!</h5>
+<object width="700" height="500"
 classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"
 codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0">
 <param name="SRC" value="http://www.deere.com/en_US/docs/html/corporate/fans_visitors/kids/spot_easy.swf">
-<embed src="http://www.deere.com/en_US/docs/html/corporate/fans_visitors/kids/spot_easy.swf" width="800" height="800"></embed>
+<embed src="http://www.deere.com/en_US/docs/html/corporate/fans_visitors/kids/spot_easy.swf" width="700" height="500"></embed>
 <object data=""></object>
 <%end%>
