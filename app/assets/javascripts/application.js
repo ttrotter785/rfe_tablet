@@ -15,4 +15,5 @@
 //= require twitter/bootstrap
 //= require rails.validations
 //= require rails.validations.actionView.js
+//= require timeout_redirect.js
 //= require_tree .
